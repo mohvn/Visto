@@ -124,22 +124,20 @@ export default async function ShowPage({ params }: ShowPageProps) {
 
                 return (
                   <span
-                    className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold tracking-wide ${
-                      isReturning
+                    className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold tracking-wide ${isReturning
                         ? "bg-emerald-500/15 text-emerald-400 ring-1 ring-emerald-500/30"
                         : isCanceled
                           ? "bg-red-500/15 text-red-400 ring-1 ring-red-500/30"
                           : "bg-muted text-muted-foreground ring-1 ring-border"
-                    }`}
+                      }`}
                   >
                     <span
-                      className={`h-1.5 w-1.5 rounded-full ${
-                        isReturning
+                      className={`h-1.5 w-1.5 rounded-full ${isReturning
                           ? "bg-emerald-400 animate-pulse"
                           : isCanceled
                             ? "bg-red-400"
                             : "bg-muted-foreground"
-                      }`}
+                        }`}
                     />
                     {label}
                   </span>

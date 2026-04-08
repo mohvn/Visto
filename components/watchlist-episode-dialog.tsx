@@ -85,7 +85,7 @@ export function WatchlistEpisodeDialog({
         setRating(data.rating ?? 0);
         setWatchedOn(data.watched_on ?? "");
       })
-      .catch(() => {});
+      .catch(() => { });
   }, [open, watched, showId, episode.season_number, episode.episode_number]);
 
   async function handleMarkWatched() {
